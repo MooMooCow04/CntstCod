@@ -1,11 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="21" x="72" y="55">
+  <block type="movement_forward" id="21" x="72" y="55"></block>
+  <block type="movement_reverse" id="31" x="75" y="105">
     <next>
-      <block type="movement_reverse" id="31">
-        <next>
-          <block type="movement_left" id="41"></block>
-        </next>
-      </block>
+      <block type="movement_left" id="41"></block>
     </next>
   </block>
 </xml>
