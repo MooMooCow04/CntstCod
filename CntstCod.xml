@@ -25,7 +25,17 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="7"></block>
+          <block type="led_select" id="23" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="39">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_reverse" id="7"></block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="8" inline="true">
@@ -43,18 +53,37 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_reverse" id="11"></block>
+          <block type="led_select" id="32" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="46">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_reverse" id="11"></block>
+            </next>
+          </block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="12"></block>
         </statement>
         <next>
-          <block type="robot_delay" id="13" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="14">
-                <field name="NUM">100</field>
+          <block type="controls_repeat" id="68" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="91">
+                <field name="NUM">40</field>
               </block>
             </value>
+            <statement name="DO">
+              <block type="robot_delay" id="13" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="14">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
           </block>
         </next>
       </block>
