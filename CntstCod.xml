@@ -66,29 +66,7 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="controls_repeat" id="68" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="91">
-                <field name="NUM">40</field>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="movement_forward" id="12">
-                <next>
-                  <block type="robot_delay" id="13" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="14">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="112"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </statement>
-          </block>
+          <block type="movement_forward" id="132"></block>
         </statement>
       </block>
     </statement>
