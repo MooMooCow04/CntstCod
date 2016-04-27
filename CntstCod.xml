@@ -90,9 +90,6 @@
             </statement>
           </block>
         </statement>
-        <next>
-          <block type="movement_left" id="122"></block>
-        </next>
       </block>
     </statement>
   </block>
